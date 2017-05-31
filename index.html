@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equivmetahttp-equiv="x-ua-compatible" content="IE=7"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/style.css?v=1.4.7">
+    <title>孙海渠道</title>
+    <style>
+        .top-conter{
+            position: relative;
+            left:-10%;
+        }
+        footer{
+            width: 100%;
+            position: absolute;
+            bottom: 5%;
+        }
+        footer p{
+            line-height: 21px;
+            text-align: center;
+            color: #6c6c6c;
+            font-size: 15px;
+            opacity: .8;
+        }
+        .lianjie{
+            position: absolute;
+            z-index: 999;
+
+        }
+    </style>
+</head>
+<body>
+<div id="ibody">
+    <div id="page-home" class="page"></div>
+    <div id="page-dyn" class="page "></div>
+    <div id="page-msg" class="page "></div>
+    <div id="page-me" class="page"></div>
+    <div id="page-me-info" class="page"></div>
+    <div id="page-person" class=""></div>
+    <div id="page-company" class="page"></div>
+    <div id="page-person-dyn" class="page"></div>
+    <div id="page-map" class="page"></div>
+    <div id="page-person-reply" class="page"></div>
+    <div id="page-person-reply-post" class="page"></div>
+    <div id="page-company-list" class="page"></div>
+    <div id="page-login-wel" class="page"></div>
+    <div id="page-login" class="page"></div>
+    <div id="page-reg" class="page"></div>
+    <div id="page-forget-password" class="page"></div>
+    <div id="page-add-product-list" class="page"></div>
+    <div id="page-sel-identity" class="page"></div>
+    <div id="page-sel-product" class="page"></div>
+    <div id="page-sel-brand" class="page"></div>
+    <div id="page-sel-city" class="page"></div>
+    <div id="page-company-zs" class="page"></div>
+    <div id="page-sel-head" class="page"></div>
+    <div id="page-dyn-post" class="page"></div>
+    <div id="page-rank" class="page"></div>
+    <div id="company-assess" class="page"></div>
+    <div id="company-assess-add" class="page"></div>
+    <div id="page-searchs" class="page"></div>
+    <div id="page-img-view" class="page"></div>
+    <div id="search-rst" class="page pc-fixed"></div>
+    <div id="page-download" class="page"></div>
+    <div id="page-product-offer" class="page"></div>
+    <div id="page-goodsVisitor" class="page"></div>
+    <div id="page-productDetail" class="page"></div>
+    <div id="page-me_offer" class="page"></div>
+    <div id="page-product-release" class="page"></div>
+    <div id="page-classify" class="page"></div>
+
+
+    <div class="opac-mask" id="opac-mask"></div>
+
+
+    <!--返回，标题头部-->
+    <div class="top-tit-box pc-fixed" id="top-tit-box">
+        <div class="top-tit-return top-tit-btn fa fa-return-left j-back"></div>
+        <div class="top-box-tit top-tit-tabs top-text-over"></div>
+        <div class="top-right-tit fa top-tit-btn"></div>
+    </div>
+
+    <div class="top pc-fixed" id="top-nav">
+
+        <div  class="top-item  top-left box-center">
+            <div data-href="#/home"  class="j-href top-left-logo"></div>
+        </div>
+
+
+        <div class="top-conter">
+            <div data-href="#/sel_city?pageType=2" class="top-item set-city j-href" style="margin-right: 3%;">
+                <div class="top-item-text"></div>
+            </div>
+
+            <div data-href="#/dyn" class="top-item ml bl j-href">
+                <div class="top-item-text">动态</div>
+                <!--<div class="top-item-line"></div>-->
+            </div>
+            <div data-href="#/searchs" class="top-item ml bl j-href">
+                <div class="top-item-text">搜索</div>
+                <!--<div class="top-item-line"></div>-->
+            </div>
+            <div data-href="#/me" class="top-item ml bl j-href">
+                <div class="top-item-text">我</div>
+                <!--<div class="top-item-line"></div>-->
+            </div>
+
+            <div  class="top-item top-right box-center" style="margin-left: 3%;">
+                <!-- <div data-href="#/searchs" class="fa fa-s-search j-href"></div>
+                 <div data-href="#/me"  class="j-href fa fa-s-users">
+                     <div class="line"></div>
+                 </div>-->
+                <div data-href="#/dyn_post" class=" j-href fa fa-edit"></div>
+            </div>
+        </div>
+        <!--<div data-href="#/home" class="top-item bl  j-href ">
+            <div class="top-item-text">批发</div>
+            <div class="top-item-line"></div>
+        </div>-->
+
+
+
+
+    </div>
+
+
+    <div class="pc-fixed dyn-content-import" id="dyn-content-import">
+        <textarea oninput="MaxMe(this)"  style="overflow:hidden" class="dyn-content-import-content kw-flex1"></textarea>
+        <div class="dyn-content-import-send j-act">
+            发送
+            <div class="j-act-mask"></div>
+        </div>
+    </div>
+
+    <div class="alert" id="common-alert">
+        <div class="alert-mask"></div>
+        <div class="alert-text"></div>
+    </div>
+
+    <div class="alert" id="alert-white" >
+        <div class="alert-mask"></div>
+        <div class="kw-box-center alert-text-box">
+            <div class="fa fa-spinner fa-spin alert-icon"></div>
+            <div class="alert-text"></div>
+        </div>
+    </div>
+
+    <div class="mask pc-fixed" id="common-mask"></div>
+
+    <div class="mask pc-fixed" id="globle-mask"></div>
+
+    <div class="mask pc-fixed" id="mask-white"></div>
+
+
+    <div class="globle-query-box" id="globle-query-box">
+        <div class="query-box-content"></div>
+        <div class="btns">
+            <div class="btns-item confirm">确定</div>
+            <div class="btns-item cancle">取消</div>
+        </div>
+    </div>
+
+
+    <div class="kw-pta-center kw-box-a-v loading" id="loading">
+        <div class="fa fa-spinner fa-spin loading-icon"></div>
+        <div class="loading-text">数据正在加载,请稍后...</div>
+    </div>
+
+    <div class="pc-fixed download-tip" id="download-tip">
+        <div class="download-tip-mask"></div>
+        <div class="kw-box-center dlt-content ">
+            <div class="dltc-item dlt-content-l">
+                <img src="img/logo_50.png" class="dltcl-logo">
+            </div>
+            <div class="dltc-item kw-text-over kw-box-v kw-flex1 dlt-content-m">
+                <div class="kw-txt-li dltcm-title">油菜IT</div>
+                <div class="kw-txt-li kw-text-over dltcm-text">IT行家社交+达人分享+O2O微电商</div>
+            </div>
+            <div class="dltc-item kw-box-center kw-flex1 dlt-content-r">
+                <a href="http://app.ucaihua.cn/" class="dltr-dl-btn">点击下载</a>
+                <div class="fa fa-close dltr-close"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>广州市中渠传媒广告有限公司  版权所有</p>
+            <p><a href="www.baidu.com">ICP证：粤ICP备12059610号-2</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
+
+
+<script src="js/app.js?v=1.8.4"></script>
+<script>
+    seajs.config({
+        dir_app : './js/',
+        alias : {
+            net : 'core/net',
+            lang : 'core/lang',
+            cookie : 'core/cookie',
+            iScroll : 'widget/iscroll',
+            mList : 'widget/mList',
+            data : 'core/data',
+            form : 'widget/form',
+            ui : 'widget/ui',
+            banner : 'widget/banner',
+            favorite : 'widget/favorite',
+            head2 : 'tpl/head2.tpl'
+        }
+    })
+    try{
+        seajs.use('app',function (app){
+            app.start();
+        })
+    }catch(e){
+        alert(e)
+    }
+
+</script>
+

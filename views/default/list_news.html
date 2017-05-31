@@ -1,0 +1,78 @@
+{template header}
+<!--通栏 开始-->
+<div class="colo_bank">
+	<div class="cbody" style="width:100%; height:152px;background:url({SITE_THEME}images/benna/b3.jpg) no-repeat center top;"></div>
+</div>
+<!--通栏 结束-->
+
+
+<div class="navigation">
+    您当前位置：<a  href="{SITE_PATH}">首页</a> >> {catpos($catid, ' &gt;&gt;&nbsp;&nbsp;')}<!--栏目面包屑导航，参考函数教程-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="blank10 clear"></div>
+    <div class="mainpdbox">
+        <div class="left">
+            <!--list begin-->
+		    <div class="newslist">
+                <h3 style="display:none;">{$catname}</h3> 	
+			    <ul class="noborder">
+                {list catid=$catid page=$page order=updatetime}
+                <li>
+                	<div class="list_imglist"><a href="{$t['url']}"><img src="{thumb($t['thumb'], 120, 90)}" width="120" height="90"></a></div>
+                	<div class="list_txtlist"><!--<span class="date">{date("Y-m-d", $t['updatetime'])}</span>--> <h2><a href="{$t['url']}">{$t['title']}</a></h2><p>{strcut($t['description'],300)}<a href="{$t['url']}">阅读全文>></a></p>
+                	</div>
+                </li>
+
+                {/list}
+                </ul>
+                <div class="listpage" style="padding-left:10px;">{$pagelist}</div>
+		   </div>
+	       <!--list end-->
+        </div>
+        <div class="right">
+            <!--right02 begin-->
+	        <div class="cate_list_out">
+		        <div class="title"><span>分类导航</span></div>
+		        <div class="cate_list">
+		        <ul>
+                {php $Pcat = getParentData($catid);}
+  				{loop $cats $c}
+      			{if $c['parentid']==$Pcat['catid']}<li><a href="{$c['url']}" title="{$c['catname']}" {if $c['catid']==$catid} class="b"{else} class="cate_{$c['catid']}"{/if}>{$c['catname']}</a></li>{/if}
+  				{/loop}
+			    </ul>
+		        </div>
+		    </div> 
+	        <!--right02 end-->
+		    <div class="blank10 clear"></div>
+	        <!--right02 begin-->
+	        <div class="right02" style="display:none;">
+		       <div class="title"><span>热点TOP10</span></div>
+		       <div class="right02box">
+		        <ul>
+                {list catid=$catid num=10 order=hits cache=36000}
+			    <li><span class="N{$key+1}"></span><a href="{$t['url']}">{$t['title']}</a></li>
+                {/list}
+			    </ul>
+		       </div>
+		    </div> 
+	        <!--right02 end-->
+       </div>
+    </div>
+    <div class="clear blank10"></div>
+{template footer}

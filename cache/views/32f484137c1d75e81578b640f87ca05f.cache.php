@@ -1,0 +1,1 @@
+<?php include $this->_include('list_image'); ?><!--调用图片栏目列表模板-->

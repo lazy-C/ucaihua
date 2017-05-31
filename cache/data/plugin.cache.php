@@ -1,0 +1,1 @@
+a:1:{s:8:"database";a:11:{s:8:"pluginid";s:1:"1";s:6:"typeid";s:1:"1";s:6:"markid";s:4:"1002";s:4:"name";s:15:"数据库工具";s:11:"description";s:139:"数据备份功能根据您的选择备份全部FineCMS数据，导出的数据文件可用“数据恢复”功能或 phpMyAdmin 导入。";s:10:"controller";s:0:"";s:3:"dir";s:8:"database";s:6:"author";s:7:"finecms";s:7:"version";s:3:"1.5";s:7:"disable";s:1:"0";s:7:"setting";a:0:{}}}

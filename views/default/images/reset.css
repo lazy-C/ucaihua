@@ -1,0 +1,52 @@
+.list_imglist{ float:left; width:130px; padding-top:5px;}
+.list_imglist img{padding:1px; border:1px solid #eee;}
+.list_txtlist{ float:right; width:600px; margin-left:-50px;}
+
+.cate_list_out{ background:#fff; border:1px solid #eee; padding:10px; font-family:'microsoft yahei'; border-radius:3px; width:158px;}
+.cate_list{}
+.cate_list li{ /*background:url(catebg.png) no-repeat;*/  height:36px; line-height:36px;  border-top:1px solid #efefef;}
+.cate_list li a{color:#000; font-size:14px;font-family:'microsoft yahei'; display:block; padding-left:20px; background:url(multipage.gif) 5px 13px no-repeat;}
+.cate_list li a:hover{ background:#f5f5f5 url(multipage.gif) 5px 13px no-repeat; text-decoration:none;}
+.cate_list_out .title{height:36px; line-height:36px; font-size:16px; font-weight:bold; padding-left:5px;}
+.cate_list li a.b{font-weight:bold;}
+
+.fb_out{ background:#fff; width:825px; margin:0 auto; padding:20px; border:0px solid #eee;}
+.fb_list{ /*background:#efefef; padding:15px;*/  padding:15px 50px;}
+.fb_list li{/* height:32px; line-height:32px; border-bottom:1px solid #eee;*//* background:url(../css/img/ico01.gif) 5px 12px no-repeat; padding-left:15px; padding-right:5px;*/ border-bottom:1px solid #dedede; padding-top:10px; padding-bottom:10px;}
+.fb_list li span{float:right; color:#777;}
+.fb_list h3{font-size:16px; font-family:'microsoft yahei'; height:36px; line-height:36px; padding:10px 5px;}
+
+.sf_left{float:left; width:100px;}
+.sf_right{float:right; width:580px;}
+
+.fb_liuyan{ background:#fff; padding:15px;}
+.fb_huifu{ background:#efefef; padding:15px;}
+span.fbliuyan{background:url(post.png) 0 9px no-repeat; padding-left:22px; display:block;}
+.fb_glyhuifu{ border:1px dashed #ddd; background:#fff; padding:10px; margin-top:10px;}
+.fb_red{ color:#f00;}
+.fb_zuozhe{ color:#333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

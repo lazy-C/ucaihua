@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*------------------------全局变量-------------------------------------*/
+html,body,div,span,p,h1,h2,h3,h4,h5,h6,em,img,strong,blockquote,
+sub,sup,tt,i,b,dd,dl,dt,form,label,table,caption,
+tbody, tfoot, thead,tr,th,td,ul,li,p,a,ol,textarea,input, button, textarea, p, blockquote, th, td{ margin:0;padding:0;}
+body{font-size:12px;font-family:"微软雅黑", "宋体", Arial, sans-serif; color:#606060; line-height:20px;background:#f7f8f9;}
+.cbody{ margin:0 auto; width:980px; position:relative;}
+.cbody960{ margin:0 auto; width:960px; position:relative;}
+input,select,textarea{vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+img{ border:0;}
+em,i{font-style:normal;}
+ul,ol,li{list-style-type:none;}
+
+a{color:#666;text-decoration:none;}
+/*a:hover,a:active,a:focus{ text-decoration:underline;}*/
+
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mb10{margin-bottom:10px;}
+.left{	float:left;}
+.right{	float:right;}
+.bor{ border:1px solid #DDD;}
+.none{ display:none;}
+
+.clear {clear: both;}
+.clearfix:after {clear:both; content:'';display: block;font-size: 0;line-height: 0;visibility: hidden;	width: 0;height: 0;}
+.clearfix {+display: inline-block;}
+* html .clearfix {height: 1%;}
+.clear_{ clear:both; height:0; overflow:hidden}
+
+
+.blank10{ clear:both; height:10px; line-height:10px; overflow:hidden;}
+.blank20{ clear:both; height:20px;line-height:20px; overflow:hidden;}
+
+
+/*分页 横条
+------------------------*/
+.colo_bank{ background:url(img/bananer01.jpg) repeat-x; height:152px; width:100%; padding-top:0px}
+
+/*内容页公共样式*/
+.sidbar{ width:159px; float:left; margin-left:72px; margin-top:10px; display:inline; overflow:hidden;}
+.sidbar_lis li{ line-height:26px; font-size:14px; font-weight:bold}
+.sidbar_lis li a{ color:#606060}
+.sidbar_lis li.mb51{ padding-bottom:31px; line-height:30px; font-size:15px; font-family:"微软雅黑"; color:#027cbf;}
+.sidbar_lis li.on a{ color:#000; padding-left:4px;}
+
+.sidbar_lis .sidbar_lis_open{ margin-left:10px;}
+.sidbar_lis .sidbar_li_click a:hover { margin-left:4px;}
+.sidbar_lis .sidbar_li_click .sidbar_lis_open li a{ background:url(img/h_sj.jpg) no-repeat; padding-left:11px; background-position:left 3px;}
+.sidbar_lis .sidbar_li_click .sidbar_lis_open li a:hover{ background:url(img/h_sj_cur.jpg) no-repeat; background-position:left 3px; color:#000000; margin-left:4px;}
+.sidbar_lis .sidbar_li_click .sidbar_lis_open li a:active{ background:url(img/h_sj3.jpg) no-repeat; background-position:left 3px; color:#909090; margin-left:4px;}
+.sidbar_lis .sidbar_lis_open li a{ font-size:12px; color:#606060}
+.sidbar_lis .sidbar_lis_open li
+
+.con{ float:left; padding-left:28px; color:#606060; height:auto; overflow:hidden; }
+.con h3{ color:#606060; font-size:12px; font-weight:normal; margin-top:9px!important;margin-top:10px;}
+.con h2{ color:#303030; font-size:16px; font-family:"微软雅黑"; margin-top:24px; width:700px;}
+
+/*翻页*/
+.notice_page{ margin-bottom:34px; background:url(img/notice_pagebg.jpg) center top no-repeat; text-align:center; width:494px; margin-top:32px;*margin-top:31px; padding-top:15px; font-size:13px;}.notice_page li{ display:inline}.notice_page li.pageon{ color:#09C; font-weight:bold}
+
+/*尾巴
+------------------------*/
+.copyright{background: url(img/endpic2.jpg) #cdcdcf;height:61px;width: 100%; margin-top:1px;line-height:18px;}
+#copyRight{ text-align:left; line-height:24px; padding-top:10px;}
+#copyRight .ddzi{ font-size:12px; font-weight: normal; float:left; color:#909090; width:500px;}
+#copyRight .ddzi a{ margin:0 8px; color:#909090;}
+#copyRight p{ float:right; color:#909090;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
